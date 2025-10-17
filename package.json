@@ -26,15 +26,19 @@
     "async-retry": "1.3.3",
     "dotenv": "17.2.3",
     "dotenv-expand": "12.0.3",
+    "lucide-react": "^0.546.0",
     "next": "15.5.4",
     "node-pg-migrate": "7.9.1",
     "pg": "8.16.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "simple-icons": "^15.16.1"
   },
   "devDependencies": {
     "@commitlint/cli": "20.1.0",
     "@commitlint/config-conventional": "20.0.0",
+    "@tailwindcss/postcss": "^4.1.14",
+    "autoprefixer": "^10.4.21",
     "commitizen": "4.3.1",
     "concurrently": "9.2.1",
     "cz-conventional-changelog": "3.3.0",
@@ -44,7 +48,9 @@
     "eslint-plugin-jest": "29.0.1",
     "husky": "9.1.7",
     "jest": "30.2.0",
-    "prettier": "3.6.2"
+    "postcss": "^8.5.6",
+    "prettier": "3.6.2",
+    "tailwindcss": "^4.1.14"
   },
   "config": {
     "commitizen": {
