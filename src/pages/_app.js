@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { Manrope } from "next/font/google";
 import CookieConsent from "../components/ui/CookieConsent";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -12,6 +13,7 @@ function App({ Component, pageProps }) {
     <div className={manrope.className}>
       <Component {...pageProps} />
       <CookieConsent />
+      <SpeedInsights />
     </div>
   );
 }
