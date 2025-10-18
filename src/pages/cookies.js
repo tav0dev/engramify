@@ -4,18 +4,18 @@ import Button from "../components/ui/Button";
 
 function Cookies() {
   return (
-    <main className="min-h-screen bg-bg text-white">
+    <main className="min-h-screen bg-bg-main text-text-primary">
       <Head>
         <title>Cookies | Engramify</title>
         <meta name="robots" content="index,follow" />
       </Head>
       <div className="max-w-3xl mx-auto px-6 py-12">
         <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">Cookies</h1>
-        <p className="text-neutral-400 mt-2">
+        <p className="text-text-secondary mt-2">
           Esta página explica como usamos cookies e como você pode gerenciar suas preferências.
         </p>
 
-        <div className="mt-6 space-y-6 text-neutral-300">
+        <div className="mt-6 space-y-6 text-text-secondary">
           <section>
             <h2 className="text-lg md:text-xl font-semibold">O que são cookies?</h2>
             <p className="mt-2">
@@ -61,7 +61,7 @@ function Cookies() {
             <p className="mt-2">
               Dúvidas? Fale conosco em
               {" "}
-              <a href="mailto:info.engramify@gmail.com" className="text-action transition-base">
+              <a href="mailto:info.engramify@gmail.com" className="text-accent-primary transition-base">
                 info.engramify@gmail.com
               </a>
               .
@@ -72,7 +72,7 @@ function Cookies() {
         <div className="mt-8">
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-semibold bg-primary text-white hover:bg-action active:bg-action/80 hover:shadow-lg active:shadow transition-base focus-visible:outline-none focus-visible:ring-2 ring-action/60 ring-offset-2 ring-offset-bg"
+            className="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-semibold bg-accent-primary text-white hover:bg-accent-variant active:bg-accent-primary/80 hover:shadow-medium active:shadow-light transition-base focus-visible:outline-none focus-visible:ring-2 ring-accent-primary/60 ring-offset-2 ring-offset-bg-main"
           >
             Voltar para início
           </Link>

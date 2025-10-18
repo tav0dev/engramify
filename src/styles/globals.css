@@ -1,17 +1,55 @@
 @import "tailwindcss";
 
-/* Theme tokens (Tailwind v4) */
+/* 🎨 Theme tokens — Light & Dark Apple-like palette */
 @theme {
-  --color-bg: #171721;
-  --color-primary: #872B97;
-  --color-action: #FF7130;
-  --color-support: #FF3C68;
+  /* 🌞 Light mode */
+  --color-bg-main: #f5f5f7; /* Fundo geral estilo Apple */
+  --color-bg-surface: #ffffff; /* Fundo de containers / cards */
+  --color-bg-muted: #f0f0f2; /* Seções intermediárias */
+  --color-bg-emphasis: #e5e5e7; /* Destaque suave */
+
+  --color-text-primary: rgba(36, 36, 38, 0.85);
+  --color-text-secondary: rgba(36, 36, 38, 0.6);
+  --color-text-tertiary: rgba(36, 36, 38, 0.3);
+  --color-text-disabled: rgba(36, 36, 38, 0.18);
+
+  --color-accent-primary: #e82a22; /* CTA / destaque */
+  --color-accent-variant: #d02b28; /* Hover / ativo */
+  --color-accent-light: #f6645c; /* Estado suave / fundo invertido */
+
+  --color-border: rgba(174, 174, 178, 0.3);
+  --color-separator: rgba(174, 174, 178, 0.5);
+
+  --shadow-light: 0 1px 3px rgba(36, 36, 38, 0.1);
+  --shadow-medium: 0 4px 8px rgba(36, 36, 38, 0.12);
 }
 
-:root {
-  color-scheme: dark;
+/* 🌙 Dark mode — segue princípios Apple */
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-bg-main: #242426;
+    --color-bg-surface: #2b2b2d;
+    --color-bg-muted: #303033;
+    --color-bg-emphasis: #3a3a3d;
+
+    --color-text-primary: rgba(255, 255, 255, 1);
+    --color-text-secondary: rgba(255, 255, 255, 0.6);
+    --color-text-tertiary: rgba(255, 255, 255, 0.3);
+    --color-text-disabled: rgba(255, 255, 255, 0.18);
+
+    --color-accent-primary: #e82a22;
+    --color-accent-variant: #f25447;
+    --color-accent-light: #ff6b5f;
+
+    --color-border: rgba(174, 174, 178, 0.2);
+    --color-separator: rgba(174, 174, 178, 0.4);
+
+    --shadow-light: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
 }
 
+/* 🌐 Global resets */
 html,
 body,
 #__next {
@@ -23,12 +61,16 @@ html {
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Smooth transitions baseline */
+/* ✨ Smooth transitions baseline */
 .transition-base {
-  transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+  transition-property:
+    color, background-color, border-color, opacity, box-shadow, transform;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -3,18 +3,18 @@ import Link from "next/link";
 
 function Termos() {
   return (
-    <main className="min-h-screen bg-bg text-white">
+    <main className="min-h-screen bg-bg-main text-text-primary">
       <Head>
         <title>Termos de Uso | Engramify</title>
         <meta name="robots" content="index,follow" />
       </Head>
       <div className="max-w-3xl mx-auto px-6 py-12">
         <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">Termos de Uso</h1>
-        <p className="text-neutral-400 mt-2">
+        <p className="text-text-secondary mt-2">
           Ao usar a Engramify, você concorda com estes termos. Leia com atenção.
         </p>
 
-        <div className="mt-6 space-y-6 text-neutral-300">
+        <div className="mt-6 space-y-6 text-text-secondary">
           <section>
             <h2 className="text-lg md:text-xl font-semibold">Aceitação dos Termos</h2>
             <p className="mt-2">
@@ -73,7 +73,7 @@ function Termos() {
           <section>
             <h2 className="text-lg md:text-xl font-semibold">Contato</h2>
             <p className="mt-2">
-              Fale conosco em <a href="mailto:info.engramify@gmail.com" className="text-action transition-base">info.engramify@gmail.com</a>.
+              Fale conosco em <a href="mailto:info.engramify@gmail.com" className="text-accent-primary transition-base">info.engramify@gmail.com</a>.
             </p>
           </section>
         </div>
@@ -81,7 +81,7 @@ function Termos() {
         <div className="mt-8">
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-semibold bg-primary text-white hover:bg-action active:bg-action/80 hover:shadow-lg active:shadow transition-base focus-visible:outline-none focus-visible:ring-2 ring-action/60 ring-offset-2 ring-offset-bg"
+            className="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-semibold bg-accent-primary text-white hover:bg-accent-variant active:bg-accent-primary/80 hover:shadow-medium active:shadow-light transition-base focus-visible:outline-none focus-visible:ring-2 ring-accent-primary/60 ring-offset-2 ring-offset-bg-main"
           >
             Voltar para início
           </Link>

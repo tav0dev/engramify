@@ -27,18 +27,17 @@ function CookieConsent() {
 
   return (
     <div className="fixed bottom-4 left-4 right-4 z-50">
-      <div className="rounded-xl border border-primary/30 bg-[#1b1b29] p-4 shadow-lg">
-        <p className="text-sm text-neutral-300">
+      <div className="rounded-xl border border-border bg-bg-surface p-4 shadow-medium">
+        <p className="text-sm text-text-secondary">
           Usamos cookies para melhorar sua experiência e entender o uso da plataforma. Você pode
-          gerenciar preferências em
-          {" "}
-          <Link href="/cookies" className="text-neutral-300 hover:text-action transition-base underline">
+          gerenciar preferências em{" "}
+          <Link href="/cookies" className="text-text-secondary hover:text-accent-primary transition-base underline">
             Cookies
           </Link>
           .
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
-          <Button variant="secondary" onClick={() => setConsent("rejected")}>
+          <Button variant="secondary" onClick={() => setConsent("rejected")}> 
             Rejeitar
           </Button>
           <Button variant="primary" onClick={() => setConsent("accepted")}>
